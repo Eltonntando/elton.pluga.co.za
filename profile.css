@@ -12,7 +12,7 @@
 }
 
 body{
-	background-image: url(C:/Users/kent/Desktop/Profilesite/profile-background.png);
+	background-image: url(Images/profile-background.png);
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -37,8 +37,8 @@ body{
 .cover img{
 	width: 540px;
 	height: 260px;
-	border-top-left-radius: 43px;
-	border-top-right-radius: 43px;
+	border-top-left-radius: 47px;
+	border-top-right-radius: 47px;
 	border-bottom-left-radius: 47px;
 	border-bottom-right-radius: 47px;
 }
