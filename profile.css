@@ -26,7 +26,7 @@ body{
 	width: 850px;
 	/* height: 680px; */
 	margin: auto;
-	border-radius: 50px;
+	border-radius: 100px;
 	border: 5px solid black;
 }
 .cover{
@@ -35,7 +35,7 @@ body{
 	border-radius: 43px;
 }
 .cover img{
-	width: 540px;
+	width: 840px;
 	height: 260px;
 	border-top-left-radius: 47px;
 	border-top-right-radius: 47px;
