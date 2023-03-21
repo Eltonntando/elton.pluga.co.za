@@ -181,7 +181,8 @@ p{
 
   .social-media-icons{
   	color: black;
-  	margin-left: 40%;
+  	margin-left: 36%;
+  	margin-top: 15px;
   }
 
   .social-media-icons i:nth-child(1) {
@@ -190,7 +191,7 @@ p{
 
   .social-media-icons i {
     margin:  0 10px;
-    font-size: 20px;
+    font-size: 40px;
     color: black;
     margin-top: 0;
   }
