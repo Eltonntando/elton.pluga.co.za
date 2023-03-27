@@ -45,10 +45,10 @@ body{
 	border-bottom-right-radius: 47px;
 }
 .circle{
-	width:255px;
-	height: 256px;
+	width:256px;
+	height: 257px;
 	margin: auto;
-	border-radius: 50%;
+	border-radius: 100%;
 	border: 10px solid purple;
 	position: relative;
 	top: -90px;
