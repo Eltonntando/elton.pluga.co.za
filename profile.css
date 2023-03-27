@@ -27,17 +27,17 @@ body{
 	/* height: 680px; */
 	margin: auto;
 	border-radius: 100px;
-	border: 10px solid black;
+	border: 10px solid purple;
 }
 .cover{
 	height: 250px;
 	width: 840px;
-	background: black;
+	background: purple;
 	border-radius: 93px;
 	margin-bottom: 100px;
 }
 .cover img{
-	width: 830px;
+	width: 830.5px;
 	height: auto;
 	border-top-left-radius: 93px;
 	border-top-right-radius: 93px;
@@ -46,17 +46,17 @@ body{
 }
 .circle{
 	width:255px;
-	height: auto;
+	height: 255px;
 	margin: auto;
 	border-radius: 50%;
-	border: 10px solid black;
+	border: 10px solid purple;
 	position: relative;
 	top: -90px;
 	margin-bottom: 10px;
 }
 .logo{
-	width: 236px;
-	height: 230px;
+	width: 237.2px;
+	height: 237.2px;
 	border-radius: 50%;
 }
 .id{
@@ -65,7 +65,7 @@ body{
 	text-align: center;
 }
 h5{
-	color: black;
+	color: purple;
 	font-weight: bold;
 	margin-bottom: 7px;
 	margin-top: 7px;
@@ -77,7 +77,7 @@ h5{
 button{
 	padding: 10px;
 	border: none;
-	background: black;
+	background: purple;
 	border-radius: 20px;
 	cursor: pointer;
 	color: white;
@@ -146,7 +146,7 @@ hr{
 h2{
 	align-content: center;
 	text-align: center;
-	color: black;
+	color: purple;
 	border-radius: 15px;
 	font-weight: bolder;
 }
@@ -154,7 +154,7 @@ h2{
 h3{
 	align-content: center;
 	text-align: center;
-	color: black;
+	color: purple;
 	font-weight: bold;	
 }
 
@@ -162,8 +162,8 @@ p{
 	align-content: center;
 	text-align: center;
 	background: white;
-	border: 10px solid black;
-	color: black;
+	border: 10px solid purple;
+	color: purple;
 	border-radius: 55px;
 	text-decoration: none;
 	margin-bottom: 30px;
@@ -180,7 +180,7 @@ p{
   }
 
   .social-media-icons{
-  	color: black;
+  	color: purple;
   	margin-left: 36%;
   	margin-top: 15px;
   }
@@ -192,7 +192,7 @@ p{
   .social-media-icons i {
     margin:  0 10px;
     font-size: 40px;
-    color: black;
+    color: purple;
     margin-top: 0;
   }
 
@@ -303,7 +303,7 @@ p{
 
 .title{
 	text-transform: uppercase;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid purple;
 	width: fit-content;
 	padding: 0 20px 3px 0;
 }
@@ -354,7 +354,7 @@ img{
   padding: 0;
   padding-bottom: 5px;
   text-align: center;
-  color: black;
+  color: purple;
   border-radius: 45px;
   font-size: 15px;
   margin-top: 55px;
