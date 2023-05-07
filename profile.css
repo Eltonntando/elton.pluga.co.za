@@ -79,10 +79,10 @@ h5{
 button{
 	padding: 10px;
 	border: 6px solid white;
-	background: none;
+	background: white;
 	border-radius: 20px;
 	cursor: pointer;
-	color: white;
+	color: black;
 	font-weight: bold;
 }
 button:first-child{
@@ -165,9 +165,9 @@ h3{
 p{
 	align-content: center;
 	text-align: center;
-	background: none;
+	background: white;
 	border: 5px solid white;
-	color: white;
+	color: black;
 	border-radius: 55px;
 	text-decoration: none;
 	margin-bottom: 30px;
