@@ -1,143 +1,369 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<link rel="shortcut icon" type="x-icon" href="Images/E-Profile.png">
-	<title>Profile-Page</title>
-	<link rel="stylesheet" href="profile.css" />
-	<!-- Font Awesome icon cdn -->
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-	integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-	<script src="https://kit.fontawesome.com/61003df5a9.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
-
-</head>
-<body>
-
-
-	<div class="wrapper">
-		<div class="page">
-	<div class="cover">
-			
-		</div>
-			
-		<div class="id-section">
-			<div class="circle">
-				<img src="Images/E-Profile.jpg" class="logo">
-			</div>
-
-			<div class="id">
-				<h2>ELTON</h2>
-
-
-									<div class="social-media-icons">
-      <ul style="align-content: center; text-align: center; margin-bottom: 20px; margin-top: 7px;">
-        <li class="social-items"><a href="https://web.facebook.com/blossomvelder/"><i class="fa-brands fa-facebook"></i></a></li>
-        <li class="social-items"><a href="https://www.youtube.com/channel/UC5AzuVWZuJUGYBChW05UKNQ?view_as=subscriber"><i class="fa-brands fa-square-youtube"></i></a></li>
-        <li class="social-items"><a href="https://www.instagram.com/blossomvelder01/?hl=en"><i class="fa-brands fa-square-instagram"></i></i></a></li>
-        <li class="social-items"><a href="www.blossomvelder.co.za"><i class="fa-solid fa-globe"></i></a></li>
-      </ul>
-  </div>
-
-			<i class=""></i>
-
-				<h5>Youtuber | Website Developer | Graphic Designer | Entrepreneur</h5>
+@import url("https://fonts.googleapis.com/css2?familyaPoppins:wght@300&display=swap");
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
 
 
 
-							  			
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
 
-</div>
-<div class="buttons" style="text-align: center;">
-				<button onclick="window.location.href='gallery.html';">
-					<i class="fa-solid fa-image"></i>Gallery
-				</button>
-				<button onclick="window.location.href='projects.html';">
-					<i class="fa-solid fa-diagram-project"></i>Projects
-				</button>
-				<button onclick="window.location.href='more.html';">
-					<i class="fa-solid fa-circle-down"></i>Services
-				</button>			
-			</div>
-			<hr>
-			<div class="details">
-				<h2 style="text-align: center; margin-bottom: 25px">Hey there!</h2>
+body{
+	background-image: linear-gradient(to right,#E99331,#A0736E);
+	background-size: cover;
+	background-attachment: fixed;
+}
 
-</div>
-		
+.page{
+	background-color: none;
+	border-radius: 100px;
+	background-image: url(Images/E-Cover1.png);
+}
 
-				<p style="text-align: center; font-size: 13px">
-					<br>
-					I'm a self-taught website developer, graphic designer and small business consultant. Also a founder at Blossom Velder pty Ltd- www.blossomvelder.co.za, a Creative Design Agency that works hand in hand with creatives, artists, and entrepreneurs build their craft effeciently.
-					<br>
-					</p>
+.wrapper{
+	width: 850px;
+	/* height: 680px; */
+	margin: auto;
+	border-radius: 100px;
+	border: 15px solid white;
+}
+.cover{
+	height: 250px;
+	width: 824px;
+	background: none;
+	border-radius: 93px;
+	margin-bottom: 100px;
+}
+.cover img{
+	width: 822px;
+	height: auto;
+	border-top-left-radius: 75px;
+	border-top-right-radius: 80px;
+	border-bottom-left-radius: 47px;
+	border-bottom-right-radius: 47px;
+}
+.circle{
+	width:256px;
+	height: 260px;
+	margin: auto;
+	border-radius: 100%;
+	border: 10px solid white;
+	position: relative;
+	top: -90px;
+	margin-bottom: 10px;
+}
+.logo{
+	width: 236px;
+	height: 240px;
+	border-radius: 100%;
+}
+.id{
+	position: relative;
+	top: -80px;
+	text-align: center;
+}
+h5{
+	color: black;
+	font-weight: bold;
+	margin-bottom: 7px;
+	margin-top: 7px;
+	background-color: white;
+	font-size: 13px;
+}
+.buttons{
+	position: relative;
+	top: -70px;
+}
+button{
+	padding: 10px;
+	border: 6px solid white;
+	background: white;
+	border-radius: 20px;
+	cursor: pointer;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+}
+button:first-child{
+	width: 18%;
+	margin-left: 10px;
+}
+button:first-child i{
+	margin-right: 10px;
+}
+button:nth-child(2) i{
+	margin-right: 15px;
+}
+button:last-child i{
+	margin-right: 15px;
+}
+button:nth-child(2){
+	width: 18%;
+}
+button:last-child{
+	width: 18%;
+}
+button:hover{
+	background: grey;
+}
+hr{
+	position: relative;
+	top: -30px;
+	margin-top: -30px;
+}
 
- <div class="link" style="color: whitesmoke; margin-top: 20px; margin-bottom: 30px;">
+.details{
+	margin-left: 0px;
+	position: relative;
+	top: -15px;
+}
+.details ul li{
+	margin-bottom: 1px;
+	margin-left: 10px;
+}
+.details ul li a{
+	color: black;
+	padding: 8px;
+}
+.stories{
+	width: auto;
+	display: flex;
+	margin: auto;
+	text-align: center;
+	margin-top: 15px;
+}
+.story{
+	margin-left: 10px;
+}
 
-  <div class="container">
-        <div class="contactInfo">
-          <div class="boxed">
+.story img{
+	width: 110px;
+	height: 140px;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0px 10px 5px grey;
+}
 
-              <div class="buttons" style="text-align: center;">
-              <button onclick="window.location.href='https://goo.gl/maps/AQV76VtKzajm46tQA';" style="border: none; color: white; background: none; margin-top: 45px;">
-					<i class="fa-solid fa-location-dot" style="font-size: 40px"></i>
-				</button>
-            <div class="text">
-              <p style="color: black;  text-decoration-color: black; font-size: 17px">No 309<br>Mbombela<br>1352</p>
-    </div>
-    </div>
-   
+h2{
+	align-content: center;
+	text-align: center;
+	color: black;
+	border-radius: 15px;
+	font-weight: bolder;
+	background-color: white;
+	font-size: 25px;
+}
 
-    <div class="boxed">
-              <div class="buttons" style="text-align: center;">
-              <button onclick="window.location.href='phone=0657371848';" style="border: none; color: white; background: none;">
-					<i class="fa-solid fa-phone" style="font-size: 40px"></i>
-				</button>
-							<button onclick="window.location.href='https://api.whatsapp.com/send?phone=0793795379';" style="border: none; color: white; background: none;">
-					<i class="fa-brands fa-square-whatsapp" style="font-size: 40px"></i>
-				</button>
-			
-            <div class="text">
-              <p style="color: black; font-size: 17px">0 657 37 1848</p>
-      </div>
-    </div>
+h3{
+	align-content: center;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	background-color: white;	
+}
 
-    <div class="boxed">
-              <div class="buttons" style="text-align: center;">
-              <button onclick="window.location.href='mailto:blossomvelder@gmail.com';" style="border: none; color: white; background: none;">
-					<i class="fa-solid fa-envelope" style="font-size: 40px"></i>
-				</button>
-       
-            <div class="text">
-              <p style="color: black; font-size: 17px">eltonntando@gmail.com</p>
-    </div>
+p{
+	align-content: center;
+	text-align: center;
+	background: white;
+	border: 5px solid white;
+	color: black;
+	border-radius: 55px;
+	text-decoration: none;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-weight: bolder;
+	font-size: 13px;
+}
+.social-title {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .social-media-icons{
+  	color: white;
+  	margin-left: 36%;
+  	margin-top: 15px;
+  }
+
+  .social-media-icons i:nth-child(1) {
+    margin-left: 10px;
+  }
+
+  .social-media-icons i {
+    margin:  0 10px;
+    font-size: 40px;
+    color: white;
+    margin-top: 0;
+  }
+
+
+   ul{
+  padding: 0;
+  list-style: none;
+  display: flex;
+ }
+
+  .linked {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    width: 50%;
+    border-radius: 35px;
+    padding: 20px;
+    margin-left: 25%;
+    align-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    text-decoration-line: none;
+  }
+
+  .linked a:hover {
+    background: lightgrey;
+  }
+  .linked-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .linked-title + p {
+    margin: 0;
+    margin-top: 10px;
+    text-decoration-line: none;
+  }
+
+
+
+  .icon {
+		text-decoration: none;
+		position: relative;
+		text-decoration: none;
+		color: black;
+		text-align: center;
+	}
+
+		.icon:before {
+			-moz-osx-font-smoothing: black;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 400;
+		}
+
+		.icon:before {
+			line-height: inherit;
+		}
+
+		.icon.solid:before {
+			font-weight: 900;
+		}
+
+		.icon.brands:before {
+			font-family: 'Font Awesome 5 Brands';
+		}
+
+		.icon > .label {
+			display: none;
+		}
 
 
 
 
-</div>
-</div>
-</div>
+.share-btn{
+	position: relative;
+	border: none;
+	border-radius: 20%;
+	cursor: pointer;
+}
 
 
- <div class="widget" style="font-size: 7px; margin-top: 2px;">
-                    <ul class="style2">
-                      <li><a href="https://www.termsfeed.com/live/1ab1c651-5b25-43e4-8812-d7e8658a1dd3">Privacy Policy</a></li>
-                      <li><a href="https://www.termsfeed.com/live/07228ddf-8948-43c8-8992-679d5a7536e2">terms</a></li>
-                    </ul>
-                  </div>
-    </div>
+.share-options{
+	bottom: 50%;
+	left: 50%;
+	width: auto;
+	height: auto;
+	transform-origin: bottom left;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background: rgba(15, 15, 15, 0.5);
+	color: white;
+	padding: 5px;
+	font-family: 'roboto';
+	transition: .5s;
+	transition-delay: .5s;
+}
 
-	<footer>
-<div class="outer-footer">
-    Copyright &copy; 2023 @Blossom Velder pty, Ltd. All Rigths Reserved
-  </div>
-  	</div>				
-			</div>
-		</div>
-	</div>
-</div>
-</footer>
 
-<script src="profile.js"></script>
-</body>
-</html>
+
+.title{
+	text-transform: uppercase;
+	border-bottom: 1px solid white;
+	width: fit-content;
+	padding: 0 20px 3px 0;
+}
+
+
+
+.link-container{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	border-radius: 40px;
+	overflow: hidden;
+	padding: 0 10px;
+}
+
+.share-options.active .title,
+.share-options.active .socia-media,
+.share-options.active .link-container{
+  opacity: 1;
+  transition: .5s;
+  transition-delay: .5s;
+}
+
+
+
+.link{
+	width: 100%;
+	height: 100%;
+	line-height: 40px;
+}
+
+.copy-btn{
+	right: 0;
+	color: white;
+	border: none;
+	height: 100%;
+	width: 30%;
+	text-transform: uppercase;
+
+}
+
+img{
+	text-align: center;
+}
+
+  footer{
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+  text-align: center;
+  color: white;
+  border-radius: 45px;
+  font-size: 15px;
+  margin-top: 55px;
+ }
