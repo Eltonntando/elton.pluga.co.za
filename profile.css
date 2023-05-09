@@ -71,7 +71,7 @@ h5{
 	margin-bottom: 7px;
 	margin-top: 7px;
 	background-color: white;
-	font-size: 15px;
+	font-size: 12px;
 }
 .buttons{
 	position: relative;
@@ -85,7 +85,7 @@ button{
 	cursor: pointer;
 	color: black;
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 18px;
 }
 button:first-child{
 	width: 18%;
@@ -154,7 +154,7 @@ h2{
 	border-radius: 15px;
 	font-weight: bolder;
 	background-color: white;
-	font-size: 30px;
+	font-size: 26px;
 }
 
 h3{
