@@ -33,7 +33,7 @@ body{
 .cover{
 	height: 250px;
 	width: 824px;
-	background: none;
+	background: transparent;
 	border-radius: 93px;
 	margin-bottom: 100px;
 }
@@ -109,6 +109,48 @@ button:last-child{
 button:hover{
 	background: grey;
 }
+
+
+
+
+button{
+	padding: 10px;
+	border: 6px solid white;
+	background: none;
+	border-radius: 20px;
+	cursor: pointer;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+}
+button:first-child{
+	width: 18%;
+	margin-left: 10px;
+}
+button:first-child i{
+	margin-right: 10px;
+}
+button:nth-child(2) i{
+	margin-right: 15px;
+}
+button:last-child i{
+	margin-right: 15px;
+}
+button:nth-child(2){
+	width: 18%;
+}
+button:last-child{
+	width: 18%;
+}
+button:hover{
+	background: grey;
+}
+
+
+
+
+
+
 hr{
 	position: relative;
 	top: -30px;
@@ -189,7 +231,7 @@ p{
 
   .social-media-icons{
   	color: white;
-  	margin-left: 36%;
+  	margin-left: 33%;
   	margin-top: 15px;
   }
 
@@ -355,6 +397,25 @@ p{
 
 img{
 	text-align: center;
+	width: 50%;
+	height: auto;
+}
+
+
+.covered{
+	width: 100%;
+	height: auto;
+	margin-top: 0px;
+	display: inherit;
+}
+
+.box{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	padding-left: 0;
 }
 
   footer{
