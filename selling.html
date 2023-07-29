@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="x-icon" href="Images/Pluga Logo3.png">
+	<title>services</title>
+	<link rel="stylesheet" href="pluga.css" />
+	<!-- Font Awesome icon cdn -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+	integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<script src="https://kit.fontawesome.com/61003df5a9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <style>
+    .share-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      display: inline-block;
+      align-self: left;
+      margin-right: 70%;
+      margin-bottom: 10%;
+    }
+
+    .social-platforms {
+      display: none;
+    }
+
+    .social-platforms.show {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .social-platforms a {
+      margin: 8px;
+      color: white;
+      font-size: 30px;
+    }
+  </style>
+    <script>
+    function showSocialPlatforms() {
+      const socialPlatforms = document.querySelector('.social-platforms');
+      socialPlatforms.classList.toggle('show');
+    }
+
+    function shareLink(platform) {
+      var linkToShare = "https://elton-pluga.netlify.app/selling.html"; // Replace with your link to share
+      var socialUrl;
+
+      if (platform === 'facebook') {
+        socialUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(linkToShare);
+      } else if (platform === 'instagram') {
+        socialUrl = 'https://www.instagram.com/share?url=' + encodeURIComponent(linkToShare);
+      } else if (platform === 'email') {
+        socialUrl = 'mailto:?body=' + encodeURIComponent(linkToShare);
+      } else if (platform === 'whatsapp') {
+        socialUrl = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(linkToShare);
+      }
+
+      window.open(socialUrl, '_blank');
+    }
+  </script>
+
+</head>
+<body>
+
+
+	<div class="wrapper">
+		<div class="page">
+	<div class="cover" style="height: auto; width: auto; background-color: transparent; border-radius: 95px; margin-top: 20px;">
+		</div>
+
+			<div class="buttons" style="text-align: center;">
+				<button onclick="window.location.href='gallery.html';">
+					<i class="fa-solid fa-image"></i>Gallery
+				</button>
+
+			<button onclick="window.location.href='index.html';">
+					<i class="fa-solid fa-house"></i>Home
+				</button>
+			</div>
+			<hr>
+			
+				
+
+<div class="selection-links" style="align-items: center;">
+  <div class="link new-link" style="text-align: center;">
+<div class="items" style="text-align: center;">
+
+
+<h3 style="text-align: center; color: black; margin-bottom: 5px;">SERVICES</h3>
+
+<div class="share-button" onclick="showSocialPlatforms()"><i class="fas fa-share"></i>Share Plug</div>
+  <div class="social-platforms">
+    <a href="https://elton-pluga.netlify.app/selling.html" onclick="shareLink('facebook')"><i class="fab fa-facebook" style="color: blue"></i></a>
+    <a href="https://elton-pluga.netlify.app/selling.html" onclick="shareLink('instagram')"><i class="fab fa-instagram" style="color: purple;"></i></a>
+    <a href="https://elton-pluga.netlify.app/selling.html" onclick="shareLink('email')"><i class="fas fa-envelope" style="color: red"></i></a>
+    <a href="https://elton-pluga.netlify.app/selling.html" onclick="shareLink('whatsapp')"><i class="fab fa-whatsapp" style="color: green"></i></a>
+  </div>
+</div>
+
+
+<div class="gallaries" style="text-align: center;">
+
+  <div class="covered" style="display: flex;">
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web8.png"><img src="Images/web8.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">From R1100/annually</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Website design & development</p>
+      <button onclick="copyToWhatsApp('Website design & development')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web8.png"><img src="Images/web8.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">From R200</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Logo design</p>
+      <button onclick="copyToWhatsApp('Logo design')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+    
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web18.png"><img src="Images/web18.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">From R150</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Poster design(Print-ready & for on-line posting)</p>
+      <button onclick="copyToWhatsApp('Poster design(Print-ready & for on-line posting)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+  </div>
+
+  <div class="covered" style="display: flex;">
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web25.png"><img src="Images/web25.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R300</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Poster design with qr code for more details (Print-ready)</p>
+      <button onclick="copyToWhatsApp('Poster design with qr code for more details (Print-ready)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web15.png"><img src="Images/web15.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R100</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Flyer design (Print-ready)</p>
+      <button onclick="copyToWhatsApp('Flyer design (Print-ready)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web15.png"><img src="Images/web15.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R400</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Flyer design (with x100 prints)</p>
+      <button onclick="copyToWhatsApp('Flyer design (with x100 prints)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+  </div>
+
+   <div class="covered" style="display: flex;">
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web31.png"><img src="Images/web31.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R250</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Flyer design with qr code for scan to view more & save details (Print-ready)</p>
+      <button onclick="copyToWhatsApp('Flyer design with qr code for scan to view more & save details (Print-ready)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web31.png"><img src="Images/web31.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R700</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Flyer design with qr code for scan to view more & save details (with x100 prints)</p>
+      <button onclick="copyToWhatsApp('Flyer design with qr code for scan to view more & save details (with x100 prints)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web22.png"><img src="Images/web22.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R400</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Business Brochure design(Print-ready)</p>
+      <button onclick="copyToWhatsApp('Business Brochure design(Print-ready)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+  </div>
+
+   <div class="covered" style="display: flex;">
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web27.png"><img src="Images/web27.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R500</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Brochure design with qr code for scan to view more & save details (Print-ready)</p>
+      <button onclick="copyToWhatsApp('Brochure design with qr code for scan to view more & save details (Print-ready)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web11.png"><img src="Images/web11.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R300</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Product Label design & printing (Print-ready)</p>
+      <button onclick="copyToWhatsApp('Product Label design & printing (Print-ready)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web11.png"><img src="Images/web11.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R600</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Product Label design & printing (x50 prints)</p>
+      <button onclick="copyToWhatsApp('Product Label design & printing (x50 prints)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+  </div>
+
+   <div class="covered" style="display: flex;">
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web27.png"><img src="Images/web27.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R500</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Brochure design with qr code for scan to view more & save details (Print-ready)</p>
+      <button onclick="copyToWhatsApp('Brochure design with qr code for scan to view more & save details (Print-ready)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web11.png"><img src="Images/web11.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R300</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Product Label design & printing (Print-ready)</p>
+      <button onclick="copyToWhatsApp('Product Label design & printing (Print-ready)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web11.png"><img src="Images/web11.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R600</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Product Label design & printing (x50 prints)</p>
+      <button onclick="copyToWhatsApp('Product Label design & printing (x50 prints)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+  </div>
+
+ <div class="covered" style="display: flex;">
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web11.png"><img src="Images/web11.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R400</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Book Cover design (Print-ready)</p>
+      <button onclick="copyToWhatsApp('Book Cover design (Print-ready)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web11.png"><img src="Images/web11.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">From R2000</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Book design & Illustration</p>
+      <button onclick="copyToWhatsApp('Book design & Illustration')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web19.png"><img src="Images/web19.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R600</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Business or Event Promo Video</p>
+      <button onclick="copyToWhatsApp('Business or Event Promo Video')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+  </div>
+
+
+    <div class="covered" style="display: flex;">
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web12.png"><img src="Images/web12.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R100</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">YouTube Video thumbnail design</p>
+      <button onclick="copyToWhatsApp('YouTube Video thumbnail design')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web12.png"><img src="Images/web12.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R200</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Music Album Cover design (Print-ready & Digital)</p>
+      <button onclick="copyToWhatsApp('Music Album Cover design (Print-ready & Digital)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web25.png"><img src="Images/web25.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R150</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Menu design If your business serves food & drinks (Print-ready)</p>
+      <button onclick="copyToWhatsApp('Menu design If your business serves food & drinks (Print-ready)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+  </div>
+
+
+   <div class="covered" style="display: flex;">
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web25.png"><img src="Images/web25.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R500</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Menu design If your business serves food & drinks (with x100 prints)</p>
+      <button onclick="copyToWhatsApp('Menu design If your business serves food & drinks (with x100 prints)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web27.png"><img src="Images/web27.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R300</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Menu design with qr code for scanning to view menu on-line If your business serves food & drinks (Print-ready)</p>
+      <button onclick="copyToWhatsApp('Menu design with qr code for scanning to view menu on-line If your business serves food & drinks (Print-ready)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web27.png"><img src="Images/web27.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R700</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Menu design with qr code for scanning to view menu on-line If your business serves food & drinks (with x100 prints)</p>
+      <button onclick="copyToWhatsApp('Menu design with qr code for scanning to view menu on-line If your business serves food & drinks (with x100 prints)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+  </div>
+
+
+     <div class="covered" style="display: flex;">
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web13.png"><img src="Images/web13.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R400</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Business Proposal design & drafting(Print-ready)</p>
+      <button onclick="copyToWhatsApp('Business Proposal design & drafting(Print-ready)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web9.png"><img src="Images/web9.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R400</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Business Profile design (Print-ready)</p>
+      <button onclick="copyToWhatsApp('Business Profile design (Print-ready)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web3.png"><img src="Images/web3.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R100</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Business Card design (Print-ready)</p>
+      <button onclick="copyToWhatsApp('Business Card design (Print-ready)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+  </div>
+
+
+   <div class="covered" style="display: flex;">
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web3.png"><img src="Images/web3.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R400</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Business Card design (with x100 prints)</p>
+      <button onclick="copyToWhatsApp('Business Card design (with x100 prints)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web9.png"><img src="Images/web9.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R300</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Business Card design with qr code for scan to view more & save details (Print-ready)</p>
+      <button onclick="copyToWhatsApp('Business Card design with qr code for scan to view more & save details (Print-ready)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web30.png"><img src="Images/web30.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R700</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Business Card design with qr code for scan to view more & save details (with x100 prints)</p>
+      <button onclick="copyToWhatsApp('Business Card design with qr code for scan to view more & save details (with x100 prints)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+  </div>
+
+   <div class="covered" style="display: flex;">
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web29.png"><img src="Images/web29.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R200</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Custom QR Code for marketing</p>
+      <button onclick="copyToWhatsApp('Custom QR Code for marketing')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web29.png"><img src="Images/web29.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R200</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">EAN & ISBN Barcode Assistance</p>
+      <button onclick="copyToWhatsApp('EAN & ISBN Barcode Assistance')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web18.png"><img src="Images/web18.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R100</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Business Letterhead design (Print-ready)</p>
+      <button onclick="copyToWhatsApp('Business Letterhead design (Print-ready)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+  </div>
+
+
+  <div class="covered" style="display: flex;">
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web21.png"><img src="Images/web21.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R300</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">News-Letter design and drafting (Print-ready)</p>
+      <button onclick="copyToWhatsApp('News-Letter design and drafting (Print-ready)')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web17.png"><img src="Images/web17.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">From R500</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Business Plan drafting</p>
+      <button onclick="copyToWhatsApp('Business Plan drafting')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web5.png"><img src="Images/web5.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R1000</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Business Registration Package + Free Logo. This package includes: Business Registration Certificate; Memorundum Of Incorporation; SARS Tax Clearence Certificate; B-BEE Certificate and CSD Registartion</p>
+      <button onclick="copyToWhatsApp('Business Registration Package + Free Logo')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+  </div>
+
+   <div class="covered" style="display: flex;">
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web2.png"><img src="Images/web2.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R200</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Tax Clearance Certificate</p>
+      <button onclick="copyToWhatsApp('Tax Clearance Certificate')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web4.png"><img src="Images/web4.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">From R100</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">B-BEEE Certificate</p>
+      <button onclick="copyToWhatsApp('B-BEEE Certificate')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+
+    <div class="box" style="border: transparent; width:50%;">
+      <a href="Images/web10.png"><img src="Images/web10.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R300</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Registered Business Name Change</p>
+      <button onclick="copyToWhatsApp('Registered Business Name Change')" style="width:auto; background: white; color: black; margin-bottom: 6px">Order</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function copyToWhatsApp(productName, price, imageSrc) {
+    // Format the message with product name and price as caption of the image
+    const message = `Hi there😀 i need :${productName}`;
+    
+    // Encode the message to handle special characters and spaces
+    const encodedMessage = encodeURIComponent(message);
+    
+    // Open WhatsApp API with the formatted message
+    window.open(`https://api.whatsapp.com/send?phone=+27793795379&text=${encodedMessage}`);
+  }
+</script>
+
+
+<button onclick="window.location.href='index.html';" style="text-align: center;">
+					<i class="fa-solid fa-house"></i>Home
+				</button>
+</div>
+<div>
+<img src="Images/Pluga Logo3.png" style="text-align: center; width: 40px; height: auto; margin-top: 15px; margin-left: 49%">
+</div>
+<iframe id=""src="" frameborder="0"></iframe>
+<div class="widget" style="font-size: 7px; margin-top: 70px;">
+                    <ul class="style2">
+                      <li><a href="https://www.termsfeed.com/live/1ab1c651-5b25-43e4-8812-d7e8658a1dd3">Privacy Policy</a></li>
+                      <li><a href="https://www.termsfeed.com/live/07228ddf-8948-43c8-8992-679d5a7536e2">terms</a></li>
+                    </ul>
+                  </div>
+    </div>
+
+
+	<footer>
+<div class="outer-footer">
+    Copyright &copy; 2023 @Blossom Velder pty, Ltd. All Rigths Reserved
+  </div>
+  	</div>				
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+<script src="pluga.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="x-icon" href="Images/Pluga Logo3.png">
+	<title>funding</title>
+	<link rel="stylesheet" href="pluga.css" />
+	<!-- Font Awesome icon cdn -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+	integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<script src="https://kit.fontawesome.com/61003df5a9.js" crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <style>
+    .share-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      display: inline-block;
+      align-self: left;
+      margin-right: 70%;
+      margin-bottom: 5%;
+    }
+
+    .social-platforms {
+      display: none;
+    }
+
+    .social-platforms.show {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .social-platforms a {
+      margin: 8px;
+      color: white;
+      font-size: 30px;
+    }
+  </style>
+	<script>
+		function showSocialPlatforms() {
+			const socialPlatforms = document.querySelector('.social-platforms');
+			socialPlatforms.classList.toggle('show');
+		}
+
+		function shareLink(platform) {
+			var linkToShare = "https://elton-pluga.netlify.app/funding.html"; // Replace with your link to share
+			var socialUrl;
+
+			if (platform === 'facebook') {
+				socialUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(linkToShare);
+			} else if (platform === 'instagram') {
+				socialUrl = 'https://www.instagram.com/share?url=' + encodeURIComponent(linkToShare);
+			} else if (platform === 'email') {
+				socialUrl = 'mailto:?body=' + encodeURIComponent(linkToShare);
+			} else if (platform === 'whatsapp') {
+				socialUrl = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(linkToShare);
+			}
+
+			window.open(socialUrl, '_blank');
+		}
+	</script>
+
+</head>
+<body>
+
+
+	<div class="wrapper">
+		<div class="page">
+	<div class="cover" style="height: auto; width: auto; background-color: transparent; border-radius: 95px; margin-top: 20px;">
+		</div>
+
+			<div class="buttons" style="text-align: center;">
+				<button onclick="window.location.href='gallery.html';">
+					<i class="fa-solid fa-image"></i>Gallery
+				</button>
+
+			<button onclick="window.location.href='index.html';">
+					<i class="fa-solid fa-house"></i>Home
+				</button>
+			</div>
+			<hr>
+			
+				
+<div class="share-button" onclick="showSocialPlatforms()"><i class="fas fa-share"></i>Share Plug</div>
+  <div class="social-platforms">
+    <a href="https://elton-pluga.netlify.app/funding.html" onclick="shareLink('facebook')"><i class="fab fa-facebook" style="color: blue"></i></a>
+    <a href="https://elton-pluga.netlify.app/funding.html" onclick="shareLink('instagram')"><i class="fab fa-instagram" style="color: purple"></i></a>
+    <a href="https://elton-pluga.netlify.app/funding.html" onclick="shareLink('email')"><i class="fas fa-envelope" style="color: red"></i></a>
+    <a href="https://elton-pluga.netlify.app/funding.html" onclick="shareLink('whatsapp')"><i class="fab fa-whatsapp" style="color: green"></i></a>
+  </div>
+<div class="selection-links" style="align-items: center;">
+  <div class="link new-link" style="text-align: center;">
+<div class="items" style="text-align: center;">
+
+<h3 style="text-align: center; color: black; margin-bottom: 4px;">PAY ME</h3>
+<p>
+	<i class="fa-solid fa-hand-holding-dollar" style="font-size: 60px"></i>
+<br>
+To make payments please kindly use banking details below.
+<br>
+You may tranfer funds to:
+<br>
+NTANDO ELTON MOLEMI: NEDBANK
+<br>
+1127249096
+<br>
+NE Molemi
+<br>
+0793795379
+<br>
+Reference: Your name & cellphone number 
+<br>
+Please ensure you insert your correct name and Cellphone number for payment tracing purposes, but you can also foward proof of payment or deposit slip image.
+<br>
+</p>
+
+
+</div>
+
+
+
+
+<button onclick="window.location.href='index.html';" style="text-align: center;">
+					<i class="fa-solid fa-house"></i>Home
+				</button>
+<div>
+<img src="Images/Pluga Logo3.png" style="text-align: center; width: 40px; height: auto; margin-left: 0%">
+</div>
+<iframe id=""src="" frameborder="0"></iframe>
+<div class="widget" style="font-size: 7px; margin-top: 70px;">
+                    <ul class="style2">
+                      <li><a href="https://www.termsfeed.com/live/1ab1c651-5b25-43e4-8812-d7e8658a1dd3">Privacy Policy</a></li>
+                      <li><a href="https://www.termsfeed.com/live/07228ddf-8948-43c8-8992-679d5a7536e2">terms</a></li>
+                    </ul>
+                  </div>
+    </div>
+
+	<footer>
+<div class="outer-footer">
+    Copyright &copy; 2023 @Blossom Velder pty, Ltd. All Rigths Reserved
+  </div>
+  	</div>				
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+<script src="pluga.js"></script>
+</body>
+</html>

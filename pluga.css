@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?familyaPoppins:wght@300&display=swap");
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body{
+	background-color: white;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.page{
+	background-color: none;
+	border-radius: 100px;
+}
+
+.wrapper{
+	width: 850px;
+	/* height: 680px; */
+	margin: auto;
+	border-radius: 100px;
+	border: 5px solid darkgray;
+}
+.cover{
+	height: 100%;
+	width: 96%;
+	background: transparent;
+	border-radius: 80px;
+	margin-bottom: 100px;
+	text-align: center;
+	margin-right: 1%;
+	margin-left: 2%;
+}
+.cover img{
+	width: 822px;
+	height: auto;
+	border-top-left-radius: 75px;
+	border-top-right-radius: 80px;
+	border-bottom-left-radius: 47px;
+	border-bottom-right-radius: 47px;
+}
+.circle{
+	width:256px;
+	height: 260px;
+	margin: auto;
+	border-radius: 100%;
+	border: 10px solid white;
+	position: relative;
+	top: -90px;
+	margin-bottom: 10px;
+}
+.logo{
+	width: 236px;
+	height: 240px;
+	border-radius: 100%;
+}
+.id{
+	position: relative;
+	top: -80px;
+	text-align: center;
+}
+h5{
+	color: black;
+	font-weight: bold;
+	margin-bottom: 7px;
+	margin-top: 7px;
+	background-color: white;
+	font-size: 13px;
+}
+.buttons{
+	position: relative;
+	top: -70px;
+}
+button{
+	padding: 10px;
+	border: 6px solid white;
+	background: white;
+	border-radius: 20px;
+	cursor: pointer;
+	color: darkgray;
+	font-weight: bold;
+	font-size: 18px;
+}
+button:first-child{
+	width: 18%;
+	margin-left: 10px;
+}
+button:first-child i{
+	margin-right: 10px;
+}
+button:nth-child(2) i{
+	margin-right: 15px;
+}
+button:nth-child(3) i{
+	margin-right: 15px;
+}
+button:last-child i{
+	margin-right: 15px;
+}
+button:nth-child(2){
+	width: 18%;
+}
+button:nth-child(3){
+	width: 18%;
+}
+button:last-child{
+	width: 18%;
+}
+button:hover{
+	background: grey;
+}
+
+
+
+
+button{
+	padding: 10px;
+	border: 6px solid white;
+	background: none;
+	border-radius: 20px;
+	cursor: pointer;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+}
+button:first-child{
+	width: 18%;
+	margin-left: 10px;
+}
+button:first-child i{
+	margin-right: 10px;
+}
+button:nth-child(2) i{
+	margin-right: 15px;
+}
+button:last-child i{
+	margin-right: 15px;
+}
+button:nth-child(2){
+	width: 18%;
+}
+button:last-child{
+	width: 18%;
+}
+button:hover{
+	background: grey;
+	color: white;
+}
+
+
+
+
+
+
+hr{
+	position: relative;
+	top: -30px;
+	margin-top: -30px;
+}
+
+.details{
+	margin-left: 0px;
+	position: relative;
+	top: -15px;
+}
+.details ul li{
+	margin-bottom: 1px;
+	margin-left: 10px;
+}
+.details ul li a{
+	color: black;
+	padding: 8px;
+}
+.stories{
+	width: auto;
+	display: flex;
+	margin: auto;
+	text-align: center;
+	margin-top: 15px;
+}
+.story{
+	margin-left: 10px;
+}
+
+.story img{
+	width: 110px;
+	height: 140px;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0px 10px 5px grey;
+}
+
+h1{
+	margin: 10px;
+}
+
+h2{
+	align-content: center;
+	text-align: center;
+	color: black;
+	border-radius: 15px;
+	font-weight: bolder;
+	background-color: white;
+	font-size: 25px;
+	border: 2px solid darkgray;
+	margin: 10px;
+}
+
+h3{
+	align-content: center;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	background-color: white;
+	margin: 10px;	
+}
+
+p{
+	align-content: center;
+	text-align: center;
+	background: white;
+	border: 2px solid darkgray;
+	color: black;
+	border-radius: 55px;
+	text-decoration: none;
+	margin-bottom: 30px;
+	margin: 10px;
+	font-weight: bolder;
+	font-size: 17px;
+	padding: 10px;
+}
+.social-title {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .social-media-icons{
+  	color: darkgray;
+  	margin-left: 0%;
+  	margin-top: 15px;
+  }
+
+  .social-media-icons i:nth-child(1) {
+    margin-left: 0px;
+  }
+
+  .social-media-icons i {
+    margin:  0px;
+    font-size: 40px;
+    color: black;
+    margin-top: 0;
+    margin-left: 0px;
+  }
+
+
+  a{
+  	text-decoration: none;
+  	text-decoration-line: none;
+  	list-style: none;
+  }
+
+   ul{
+  padding: 0;
+  list-style: none;
+  display: flex;
+ }
+
+  .linked {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    width: 50%;
+    border-radius: 35px;
+    padding: 20px;
+    margin-left: 25%;
+    align-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    text-decoration-line: none;
+  }
+
+  .linked a:hover {
+    background: darkblue;
+  }
+  .linked-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .linked-title + p {
+    margin: 0;
+    margin-top: 10px;
+    text-decoration-line: none;
+  }
+
+
+
+  .icon {
+		text-decoration: none;
+		position: relative;
+		text-decoration: none;
+		color: darkgray;
+		text-align: center;
+	}
+
+		.icon:before {
+			-moz-osx-font-smoothing: black;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 400;
+		}
+
+		.icon:before {
+			line-height: inherit;
+		}
+
+		.icon.solid:before {
+			font-weight: 900;
+		}
+
+		.icon.brands:before {
+			font-family: 'Font Awesome 5 Brands';
+		}
+
+		.icon > .label {
+			display: none;
+		}
+
+
+
+
+.share-button{
+	position: relative;
+	border-radius: 20%;
+	cursor: pointer;
+	color: white;
+	margin-left: 5%;
+	font-weight: bolder;
+}
+
+
+
+
+.title{
+	text-transform: uppercase;
+	border-bottom: 1px solid darkgray;
+	width: fit-content;
+	padding: 0 20px 3px 0;
+}
+
+
+
+.link-container{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	border-radius: 40px;
+	overflow: hidden;
+	padding: 0 10px;
+}
+
+.share-options.active .title,
+.share-options.active .socia-media,
+.share-options.active .link-container{
+  opacity: 1;
+  transition: .5s;
+  transition-delay: .5s;
+}
+
+.audio{
+	flex-direction: initial;
+	height: 200px;
+}
+
+#mypdf {
+	width: 85%;
+	height: 975px;
+}
+
+.link{
+	width: 100%;
+	height: 100%;
+	line-height: 40px;
+}
+
+
+img{
+	text-align: center;
+}
+
+  footer{
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+  text-align: center;
+  color: darkgray;
+  border-radius: 45px;
+  font-size: 15px;
+  margin-top: 55px;
+ }
