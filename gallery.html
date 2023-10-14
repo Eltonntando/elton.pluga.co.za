@@ -1,73 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="shortcut icon" type="x-icon" href="Images/Pluga Logo3.png">
-	<title>selling-page</title>
+	<link rel="shortcut icon" type="x-icon" href="Images/Pluga Logo3.png">
+	<title>gallery</title>
 	<link rel="stylesheet" href="pluga.css" />
   <link rel="stylesheet" href="main.css" />
-
 	<!-- Font Awesome icon cdn -->
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 	integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-	<script src="https://kit.fontawesome.com/60200003df5a9.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
+	<script src="https://kit.fontawesome.com/61003df5a9.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <style>
-    .share-button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 14px;
-      cursor: pointer;
-      display: inline-block;
-      align-self: left;
-      margin-right: 70%;
-      margin-bottom: 10%;
-    }
-
-    .social-platforms {
-      display: none;
-    }
-
-    .social-platforms.show {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 10px;
-    }
-
-    .social-platforms a {
-      margin: 8px;
-      color: white;
-      font-size: 30px;
-    }
-  </style>
-    <script>
-    function showSocialPlatforms() {
-      const socialPlatforms = document.querySelector('.social-platforms');
-      socialPlatforms.classList.toggle('show');
-    }
-
-    function shareLink(platform) {
-      var linkToShare = "https://messyp.netlify.app/selling.html"; // Replace with your link to share
-      var socialUrl;
-
-      if (platform === 'facebook') {
-        socialUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(linkToShare);
-      } else if (platform === 'instagram') {
-        socialUrl = 'https://www.instagram.com/share?url=' + encodeURIComponent(linkToShare);
-      } else if (platform === 'email') {
-        socialUrl = 'mailto:?body=' + encodeURIComponent(linkToShare);
-      } else if (platform === 'whatsapp') {
-        socialUrl = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(linkToShare);
-      }
-
-      window.open(socialUrl, '_blank');
-    }
-  </script>
 
 </head>
 <body>
@@ -75,113 +17,284 @@
 
 	<div class="wrapper">
 		<div class="page">
-	<div class="cover" style="height: auto; width: auto; background-color: transparent; border-radius: 95px; margin-top: 20px;">
+	<div class="cover" style="height: 150px; width: auto; background-color: transparent; border-radius: 95px; margin-top: 20px;">
 		</div>
-
-			<div class="buttons" style="text-align: center;">
-				<button onclick="window.location.href='gallery.html';">
-					<i class="fa-solid fa-image"></i>Gallery
-				</button>
-
-			<button onclick="window.location.href='index.html';">
+			
+		<div class="id-section">
+			</div>
+			<div class="buttons" style="text-align: center; margin-bottom: 30px;">
+				<button onclick="window.location.href='index.html';">
 					<i class="fa-solid fa-house"></i>Home
 				</button>
+
+			
+				<button onclick="window.location.href='selling.html';">
+					<i class="fa-solid fa-circle-down"></i>Merch
+				</button>
+							
 			</div>
 			
-			
-				
-
-<div class="selection-links" style="align-items: center;">
-  <div class="link new-link" style="text-align: center;">
-<div class="items" style="text-align: center;">
-
-
-<h3 style="text-align: center; color: black; margin-bottom: 5px;">Services</h3>
-
-
-<!-- Insert site/plug sharing links -->
-
-<div class="share-button" onclick="showSocialPlatforms()"><i class="fas fa-share"></i>Share Plug</div>
-  <div class="social-platforms">
-    <a href="https://landa-profiled.netlify.app/selling2.html" onclick="shareLink('facebook')"><i class="fab fa-facebook" style="color: blue; font-size: 70px;"></i></a>
-    <a href="https://landa-profiled.netlify.app/selling2.html" onclick="shareLink('instagram')"><i class="fab fa-instagram" style="color: purple; font-size: 70px;"></i></a>
-    <a href="https://landa-profiled.netlify.app/selling2.html" onclick="shareLink('email')"><i class="fas fa-envelope" style="color: red; font-size: 70px;"></i></a>
-    <a href="https://landa-profiled.netlify.app/selling2.html" onclick="shareLink('whatsapp')"><i class="fab fa-whatsapp" style="color: green; font-size: 70px;"></i></a>
-  </div>
-</div>
-
 
 
 <div class="gallaries" style="text-align: center;">
+<div class="covered" style="display: flex;">
+ 
 
-
-
-<!-- Insert site owner's services and pricing details -->
-
-
-  <div class="covered" style="display: flex;">
-
-    <div class="box" style="border: transparent; width:50%;">
-      <div class="post" data-post-id="0200001">
-      <a href=""><img src="" class="post-image" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
-      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R200/1Poem</h2>
-      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Poem-Writing</p>
-      <button onclick="copyToWhatsApp('Poem-Writing')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Inquire</button>
-      <div class="post-ratings-container" style="margin-right: 10px">
+  <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="0001">
+    <a href="Images/project70.png"><img class="post-image" src="Images/project70.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
       <div class="post-rating">
         <span class="post-rating-button material-icons">thumb_up</span>
         <span class="post-rating-count">0</span>
       </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-count">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="0002">
+    <a href="Images/project71.png"><img class="post-image" src="Images/project71.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
       <div class="post-rating">
-        <span class="post-rating-button material-icons">loyalty</span>
+        <span class="post-rating-button material-icons">thumb_up</span>
+        <span class="post-rating-count">0</span>
+      </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-count">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
+<div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="0003">
+    <a href="Images/project44.png"><img class="post-image" src="Images/project44.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
+      <div class="post-rating">
+        <span class="post-rating-button material-icons">thumb_up</span>
+        <span class="post-rating-count">0</span>
+      </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-count">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="covered" style="display: flex;">
+
+
+  <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="0004">
+    <a href="Images/project45.png"><img class="post-image" src="Images/project45.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
+      <div class="post-rating">
+        <span class="post-rating-button material-icons">thumb_up</span>
+        <span class="post-rating-count">0</span>
+      </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-count">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="0005">
+    <a href="Images/project27.png"><img class="post-image" src="Images/project27.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
+      <div class="post-rating">
+        <span class="post-rating-button material-icons">thumb_up</span>
+        <span class="post-rating-count">0</span>
+      </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-count">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="0006">
+    <a href="Images/project38.png"><img class="post-image" src="Images/project38.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
+      <div class="post-rating">
+        <span class="post-rating-button material-icons">thumb_up</span>
+        <span class="post-rating-count">0</span>
+      </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-count">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="covered" style="display: flex;">
+
+<div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="0007">
+    <a href="Images/project39.png"><img class="post-image" src="Images/project39.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
+      <div class="post-rating">
+        <span class="post-rating-button material-icons">thumb_up</span>
+        <span class="post-rating-count">0</span>
+      </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-count">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="0008">
+    <a href="Images/project40.png"><img class="post-image" src="Images/project40.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
+      <div class="post-rating">
+        <span class="post-rating-button material-icons">thumb_up</span>
+        <span class="post-rating-count">0</span>
+      </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-count">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="0009">
+    <a href="Images/project18.png"><img class="post-image" src="Images/project18.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
+      <div class="post-rating">
+        <span class="post-rating-button material-icons">thumb_up</span>
+        <span class="post-rating-count">0</span>
+      </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-count">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="covered" style="display: flex;">
+
+  <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="00010">
+    <a href="Images/project17.png"><img class="post-image" src="Images/project17.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
+      <div class="post-rating">
+        <span class="post-rating-button material-icons">thumb_up</span>
+        <span class="post-rating-count">0</span>
+      </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-count">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="00011">
+    <a href="Images/project3.png"><img class="post-image" src="Images/project3.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
+      <div class="post-rating">
+        <span class="post-rating-button material-icons">thumb_up</span>
+        <span class="post-rating-count">0</span>
+      </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-count">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="00012">
+    <a href="Images/project6.png"><img class="post-image" src="Images/project6.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
+      <div class="post-rating">
+        <span class="post-rating-button material-icons">thumb_up</span>
+        <span class="post-rating-count">0</span>
+      </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-count">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="covered" style="display: flex;">
+
+  <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="00013">
+    <a href="Images/project7.png"><img class="post-image" src="Images/project7.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
+      <div class="post-rating">
+        <span class="post-rating-button material-icons">thumb_up</span>
+        <span class="post-rating-count">0</span>
+      </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-count">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="00014">
+    <a href="Images/project8.png"><img class="post-image" src="Images/project8.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
+      <div class="post-rating">
+        <span class="post-rating-button material-icons">thumb_up</span>
+        <span class="post-rating-count">0</span>
+      </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
         <span class="post-rating-count">0</span>
       </div>
     </div>
   </div>
 </div>
   
-  
-
-
-    <div class="box" style="border: transparent; width:50%;">
-      <div class="post" data-post-id="0200002">
-      <a href=""><img src="" class="post-image" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
-      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R200/1hr</h2>
-      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Poetry Virtual Class</p>
-      <button onclick="copyToWhatsApp('Poetry Virtual Class')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Inquire</button>
-      <div class="post-ratings-container" style="margin-right: 10px">
+  <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="00015">
+    <a href="Images/project9.png"><img class="post-image" src="Images/project9.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
       <div class="post-rating">
         <span class="post-rating-button material-icons">thumb_up</span>
         <span class="post-rating-count">0</span>
       </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">loyalty</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-  
-
-
-</div>
-
-  
-  <div class="covered" style="display: flex;">
-
-    <div class="box" style="border: transparent; width:50%;">
-      <div class="post" data-post-id="0200003">
-      <a href=""><img src="" class="post-image" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
-      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R200</h2>
-      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Voice-over</p>
-      <button onclick="copyToWhatsApp('Voice-over')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Inquire</button>
-      <div class="post-ratings-container" style="margin-right: 10px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">loyalty</span>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
         <span class="post-rating-count">0</span>
       </div>
     </div>
@@ -189,21 +302,34 @@
 </div>
 
 
+<div class="covered" style="display: flex;">
 
-
-    <div class="box" style="border: transparent; width:50%;">
-      <div class="post" data-post-id="0200004">
-      <a href=""><img src="" class="post-image" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
-      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">Fee will depend on type & size of business</h2>
-      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Influencer Marketing</p>
-      <button onclick="copyToWhatsApp('Influencer Marketing')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Inquire</button>
-      <div class="post-ratings-container" style="margin-right: 10px">
+  <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="00016">
+    <a href="Images/project43.png"><img class="post-image" src="Images/project43.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
       <div class="post-rating">
         <span class="post-rating-button material-icons">thumb_up</span>
         <span class="post-rating-count">0</span>
       </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-count">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="00017">
+    <a href="Images/project46.png"><img class="post-image" src="Images/project46.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
       <div class="post-rating">
-        <span class="post-rating-button material-icons">loyalty</span>
+        <span class="post-rating-button material-icons">thumb_up</span>
+        <span class="post-rating-count">0</span>
+      </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
         <span class="post-rating-count">0</span>
       </div>
     </div>
@@ -211,24 +337,16 @@
 </div>
 
 
-</div>
-
-  
-  <div class="covered" style="display: flex;">
-
-    <div class="box" style="border: transparent; width:50%;">
-      <div class="post" data-post-id="0200005">
-      <a href=""><img src="" class="post-image" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
-      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">Terms are negotiable</h2>
-      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Brand Ambassador Services</p>
-      <button onclick="copyToWhatsApp('Brand Ambassador Services')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Inquire</button>
-      <div class="post-ratings-container" style="margin-right: 10px">
+<div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="00018">
+    <a href="Images/project48.png"><img class="post-image" src="Images/project48.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
       <div class="post-rating">
         <span class="post-rating-button material-icons">thumb_up</span>
         <span class="post-rating-count">0</span>
       </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">loyalty</span>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
         <span class="post-rating-count">0</span>
       </div>
     </div>
@@ -237,19 +355,18 @@
 
 
 
-    <div class="box" style="border: transparent; width:50%;">
-      <div class="post" data-post-id="0200006">
-      <a href=""><img src="" class="post-image" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
-      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">Terms are negotiable</h2>
-      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Marketing Ad Video/Photo Shoot</p>
-      <button onclick="copyToWhatsApp('Marketing Ad Video/Photo Shoot')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Inquire</button>
-      <div class="post-ratings-container" style="margin-right: 10px">
+<div class="covered" style="display: flex;">
+
+  <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="00019">
+    <a href="Images/project17.png"><img class="post-image" src="Images/project17.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
       <div class="post-rating">
         <span class="post-rating-button material-icons">thumb_up</span>
         <span class="post-rating-count">0</span>
       </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">loyalty</span>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
         <span class="post-rating-count">0</span>
       </div>
     </div>
@@ -257,41 +374,50 @@
 </div>
 
 
+  <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="00020">
+    <a href="Images/project70.png"><img class="post-image" src="Images/project70.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
+      <div class="post-rating">
+        <span class="post-rating-button material-icons">thumb_up</span>
+        <span class="post-rating-count">0</span>
+      </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-count">0</span>
+      </div>
+    </div>
+  </div>
 </div>
 
-
-<!-- Insert site owner's whatsapp contact number -->
-
-<script>
-  function copyToWhatsApp(productName, price, imageSrc) {
-    // Format the message with product name and price as caption of the image
-    const message = `Hi there😀 i need :${productName}`;
-    
-    // Encode the message to handle special characters and spaces
-    const encodedMessage = encodeURIComponent(message);
-    
-    // Open WhatsApp API with the formatted message
-    window.open(`https://api.whatsapp.com/send?phone=+27712174633&text=${encodedMessage}`);
-  }
-</script>
-
-
-<button onclick="window.location.href='index.html';" style="text-align: center;">
-					<i class="fa-solid fa-house"></i>Home
-				</button>
+   <div class="box" style="border: transparent; width:50%;">
+    <div class="post" data-post-id="00021">
+    <a href="Images/project70.png"><img class="post-image" src="Images/project70.png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
+     <div class="post-ratings-container" style="margin-right: 8px">
+      <div class="post-rating">
+        <span class="post-rating-button material-icons">thumb_up</span>
+        <span class="post-rating-count">0</span>
+      </div>
+      <div class="post-rating" style="margin-right: 10px">
+        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-count">0</span>
+      </div>
+    </div>
+  </div>
 </div>
+</div>
+
 <div class="gallaries" style="text-align: center;">
-<img src="Images/Pluga Logo3.png" style="text-align: center; width: 40px; height: auto; margin-top: 15px;">
+<img src="Images/Pluga Logo3.png" style="text-align: center; width: 40px; height: auto;">
 </div>
-<iframe id=""src="" frameborder="0"></iframe>
-<div class="widget" style="font-size: 7px; margin-top: 70px;">
+
+ <div class="widget" style="font-size: 7px; margin-top: 70px;">
                     <ul class="style2">
                       <li><a href="https://www.termsfeed.com/live/1ab1c651-5b25-43e4-8812-d7e8658a1dd3">Privacy Policy</a></li>
                       <li><a href="https://www.termsfeed.com/live/07228ddf-8948-43c8-8992-679d5a7536e2">terms</a></li>
                     </ul>
                   </div>
     </div>
-
 
 	<footer>
 <div class="outer-footer">
@@ -302,8 +428,8 @@
 		</div>
 	</div>
 </div>
-</footer>
 <script src="pluga.js"></script>
 <script src="main.js"></script>
+</footer>
 </body>
 </html>
