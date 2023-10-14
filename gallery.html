@@ -1,17 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="shortcut icon" type="x-icon" href="Images/Pluga Logo3.png">
-	<title>gallery</title>
+  <link rel="shortcut icon" type="x-icon" href="Images/Pluga Logo3.png">
+	<title>selling-page</title>
 	<link rel="stylesheet" href="pluga.css" />
   <link rel="stylesheet" href="main.css" />
 
 	<!-- Font Awesome icon cdn -->
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 	integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-	<script src="https://kit.fontawesome.com/61003df5a9.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/60200003df5a9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    .share-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      display: inline-block;
+      align-self: left;
+      margin-right: 70%;
+      margin-bottom: 10%;
+    }
+
+    .social-platforms {
+      display: none;
+    }
+
+    .social-platforms.show {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .social-platforms a {
+      margin: 8px;
+      color: white;
+      font-size: 30px;
+    }
+  </style>
+    <script>
+    function showSocialPlatforms() {
+      const socialPlatforms = document.querySelector('.social-platforms');
+      socialPlatforms.classList.toggle('show');
+    }
+
+    function shareLink(platform) {
+      var linkToShare = "https://messyp.netlify.app/selling.html"; // Replace with your link to share
+      var socialUrl;
+
+      if (platform === 'facebook') {
+        socialUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(linkToShare);
+      } else if (platform === 'instagram') {
+        socialUrl = 'https://www.instagram.com/share?url=' + encodeURIComponent(linkToShare);
+      } else if (platform === 'email') {
+        socialUrl = 'mailto:?body=' + encodeURIComponent(linkToShare);
+      } else if (platform === 'whatsapp') {
+        socialUrl = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(linkToShare);
+      }
+
+      window.open(socialUrl, '_blank');
+    }
+  </script>
 
 </head>
 <body>
@@ -19,152 +75,113 @@
 
 	<div class="wrapper">
 		<div class="page">
-	<div class="cover" style="height: 150px; width: auto; background-color: transparent; border-radius: 95px; margin-top: 20px;">
+	<div class="cover" style="height: auto; width: auto; background-color: transparent; border-radius: 95px; margin-top: 20px;">
 		</div>
-			
-		<div class="id-section">
-			</div>
-			<div class="buttons" style="text-align: center; margin-bottom: 30px;">
-				<button onclick="window.location.href='index.html';">
+
+			<div class="buttons" style="text-align: center;">
+				<button onclick="window.location.href='gallery.html';">
+					<i class="fa-solid fa-image"></i>Gallery
+				</button>
+
+			<button onclick="window.location.href='index.html';">
 					<i class="fa-solid fa-house"></i>Home
 				</button>
-
-			
-				<button onclick="window.location.href='projects.html';">
-					<i class="fa-solid fa-circle-down"></i>Poems
-				</button>
-							
 			</div>
 			
+			
+				
+
+<div class="selection-links" style="align-items: center;">
+  <div class="link new-link" style="text-align: center;">
+<div class="items" style="text-align: center;">
+
+
+<h3 style="text-align: center; color: black; margin-bottom: 5px;">Services</h3>
+
+
+<!-- Insert site/plug sharing links -->
+
+<div class="share-button" onclick="showSocialPlatforms()"><i class="fas fa-share"></i>Share Plug</div>
+  <div class="social-platforms">
+    <a href="https://landa-profiled.netlify.app/selling2.html" onclick="shareLink('facebook')"><i class="fab fa-facebook" style="color: blue; font-size: 70px;"></i></a>
+    <a href="https://landa-profiled.netlify.app/selling2.html" onclick="shareLink('instagram')"><i class="fab fa-instagram" style="color: purple; font-size: 70px;"></i></a>
+    <a href="https://landa-profiled.netlify.app/selling2.html" onclick="shareLink('email')"><i class="fas fa-envelope" style="color: red; font-size: 70px;"></i></a>
+    <a href="https://landa-profiled.netlify.app/selling2.html" onclick="shareLink('whatsapp')"><i class="fab fa-whatsapp" style="color: green; font-size: 70px;"></i></a>
+  </div>
+</div>
+
 
 
 <div class="gallaries" style="text-align: center;">
-<div class="covered" style="display: flex;">
 
 
-  <!-- Insert site owner's images and captions -->
 
- 
-   <div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="0201">
-    <a href="Images/Landa-image (1).png"><img class="post-image" src="Images/Landa-image (1).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Thee Brand Ambassador</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
+<!-- Insert site owner's services and pricing details -->
+
+
+  <div class="covered" style="display: flex;">
+
+    <div class="box" style="border: transparent; width:50%;">
+      <div class="post" data-post-id="0200001">
+      <a href=""><img src="" class="post-image" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R200/1Poem</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Poem-Writing</p>
+      <button onclick="copyToWhatsApp('Poem-Writing')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Inquire</button>
+      <div class="post-ratings-container" style="margin-right: 10px">
       <div class="post-rating">
         <span class="post-rating-button material-icons">thumb_up</span>
         <span class="post-rating-count">0</span>
       </div>
-      <div class="post-rating" style="margin-right: 10px">
-        <span class="post-rating-button material-icons">favorite</span>
+      <div class="post-rating">
+        <span class="post-rating-button material-icons">loyalty</span>
         <span class="post-rating-count">0</span>
       </div>
     </div>
   </div>
 </div>
+  
+  
 
-  <div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="0202">
-    <a href="Images/Landa-image (2).png"><img class="post-image" src="Images/Landa-image (2).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">My What an amaizing event it was!</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
+
+    <div class="box" style="border: transparent; width:50%;">
+      <div class="post" data-post-id="0200002">
+      <a href=""><img src="" class="post-image" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R200/1hr</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Poetry Virtual Class</p>
+      <button onclick="copyToWhatsApp('Poetry Virtual Class')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Inquire</button>
+      <div class="post-ratings-container" style="margin-right: 10px">
       <div class="post-rating">
         <span class="post-rating-button material-icons">thumb_up</span>
         <span class="post-rating-count">0</span>
       </div>
       <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-button material-icons">loyalty</span>
         <span class="post-rating-count">0</span>
       </div>
     </div>
   </div>
 </div>
- 
-   <div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="0203">
-    <a href="Images/Landa-image (3).png"><img class="post-image" src="Images/Landa-image (3).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Libhubesikati</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
+  
+
+
+</div>
+
+  
+  <div class="covered" style="display: flex;">
+
+    <div class="box" style="border: transparent; width:50%;">
+      <div class="post" data-post-id="0200003">
+      <a href=""><img src="" class="post-image" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">R200</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Voice-over</p>
+      <button onclick="copyToWhatsApp('Voice-over')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Inquire</button>
+      <div class="post-ratings-container" style="margin-right: 10px">
       <div class="post-rating">
         <span class="post-rating-button material-icons">thumb_up</span>
         <span class="post-rating-count">0</span>
       </div>
       <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-</div>
-<div class="covered" style="display: flex;">
-
-   <div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="0204">
-    <a href="Images/Landa-image (4).png"><img class="post-image" src="Images/Landa-image (4).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">On my way to a Cultural event</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-   <div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="0205">
-    <a href="Images/Landa-image (5).png"><img class="post-image" src="Images/Landa-image (5).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Me Myself & I</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-   <div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="0206">
-    <a href="Images/Landa-image (6).png"><img class="post-image" src="Images/Landa-image (6).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">An award winning poetess</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-<div class="covered" style="display: flex;">
-
- <div class="box" style="border: transparent; width:50%; margin-right: 4px;">
-    <div class="post" data-post-id="0207">
-    <a href="Images/Landa-image (7).png"><img class="post-image" src="Images/Landa-image (7).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Live performance Enkandla</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-button material-icons">loyalty</span>
         <span class="post-rating-count">0</span>
       </div>
     </div>
@@ -173,17 +190,45 @@
 
 
 
-<div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="0208">
-    <a href="Images/Landa-image (8).png"><img class="post-image" src="Images/Landa-image (8).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">African beauty</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
+
+    <div class="box" style="border: transparent; width:50%;">
+      <div class="post" data-post-id="0200004">
+      <a href=""><img src="" class="post-image" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">Fee will depend on type & size of business</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Influencer Marketing</p>
+      <button onclick="copyToWhatsApp('Influencer Marketing')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Inquire</button>
+      <div class="post-ratings-container" style="margin-right: 10px">
       <div class="post-rating">
         <span class="post-rating-button material-icons">thumb_up</span>
         <span class="post-rating-count">0</span>
       </div>
       <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-button material-icons">loyalty</span>
+        <span class="post-rating-count">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+  
+  <div class="covered" style="display: flex;">
+
+    <div class="box" style="border: transparent; width:50%;">
+      <div class="post" data-post-id="0200005">
+      <a href=""><img src="" class="post-image" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">Terms are negotiable</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Brand Ambassador Services</p>
+      <button onclick="copyToWhatsApp('Brand Ambassador Services')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Inquire</button>
+      <div class="post-ratings-container" style="margin-right: 10px">
+      <div class="post-rating">
+        <span class="post-rating-button material-icons">thumb_up</span>
+        <span class="post-rating-count">0</span>
+      </div>
+      <div class="post-rating">
+        <span class="post-rating-button material-icons">loyalty</span>
         <span class="post-rating-count">0</span>
       </div>
     </div>
@@ -193,16 +238,18 @@
 
 
     <div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="0209">
-    <a href="Images/Landa-image (9).png"><img class="post-image" src="Images/Landa-image (9).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">The love i received was beyond my expectations</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
+      <div class="post" data-post-id="0200006">
+      <a href=""><img src="" class="post-image" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid white;"></a>
+      <h2 style="text-align: center; align-items: center; width:70%; border-radius: 0px; margin-left: 15%;">Terms are negotiable</h2>
+      <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Marketing Ad Video/Photo Shoot</p>
+      <button onclick="copyToWhatsApp('Marketing Ad Video/Photo Shoot')" style="width:auto; background: #4CAF50; color: white; border-radius: 25px;">Inquire</button>
+      <div class="post-ratings-container" style="margin-right: 10px">
       <div class="post-rating">
         <span class="post-rating-button material-icons">thumb_up</span>
         <span class="post-rating-count">0</span>
       </div>
       <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
+        <span class="post-rating-button material-icons">loyalty</span>
         <span class="post-rating-count">0</span>
       </div>
     </div>
@@ -211,381 +258,40 @@
 
 
 </div>
-<div class="covered" style="display: flex;">
 
- <div class="box" style="border: transparent; width:50%; margin-right: 4px;">
-    <div class="post" data-post-id="02010">
-    <a href="Images/Landa-image (10).png"><img class="post-image" src="Images/Landa-image (10).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">During a live-set</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
+
+<!-- Insert site owner's whatsapp contact number -->
+
+<script>
+  function copyToWhatsApp(productName, price, imageSrc) {
+    // Format the message with product name and price as caption of the image
+    const message = `Hi there😀 i need :${productName}`;
+    
+    // Encode the message to handle special characters and spaces
+    const encodedMessage = encodeURIComponent(message);
+    
+    // Open WhatsApp API with the formatted message
+    window.open(`https://api.whatsapp.com/send?phone=+27712174633&text=${encodedMessage}`);
+  }
+</script>
+
+
+<button onclick="window.location.href='index.html';" style="text-align: center;">
+					<i class="fa-solid fa-house"></i>Home
+				</button>
 </div>
-
-
-
-<div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="02011">
-    <a href="Images/Landa-image (11).png"><img class="post-image" src="Images/Landa-image (11).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Amaizing grace, i thank the Lord for the gift</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-    <div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="02012">
-    <a href="Images/Landa-image (12).png"><img class="post-image" src="Images/Landa-image (12).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Again, I am an award winning poetess</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-</div>
-<div class="covered" style="display: flex;">
-
- <div class="box" style="border: transparent; width:50%; margin-right: 4px;">
-    <div class="post" data-post-id="02013">
-    <a href="Images/Landa-image (13).png"><img class="post-image" src="Images/Landa-image (13).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Best Poet Of The Year Award winner</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="02014">
-    <a href="Images/Landa-image (14).png"><img class="post-image" src="Images/Landa-image (14).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">An unforgatable moment indeed</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-    <div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="02015">
-    <a href="Images/Landa-image (15).png"><img class="post-image" src="Images/Landa-image (15).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Inpirational to the young generation</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-</div>
-<div class="covered" style="display: flex;">
-
- <div class="box" style="border: transparent; width:50%; margin-right: 4px;">
-    <div class="post" data-post-id="02016">
-    <a href="Images/Landa-image (16).png"><img class="post-image" src="Images/Landa-image (16).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">The Lioness roaring</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="02017">
-    <a href="Images/Landa-image (17).png"><img class="post-image" src="Images/Landa-image (17).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Believe in your self, trust me</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-    <div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="02018">
-    <a href="Images/Landa-image (18).png"><img class="post-image" src="Images/Landa-image (18).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Representing my Culture</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-</div>
-<div class="covered" style="display: flex;">
-
- <div class="box" style="border: transparent; width:50%; margin-right: 4px;">
-    <div class="post" data-post-id="02019">
-    <a href="Images/Landa-image (19).png"><img class="post-image" src="Images/Landa-image (19).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">I am an African</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="02020">
-    <a href="Images/Landa-image (20).png"><img class="post-image" src="Images/Landa-image (20).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">With Mr Mbatsane the founder of Ebukhosini Resort</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-    <div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="02021">
-    <a href="Images/Landa-image (21).png"><img class="post-image" src="Images/Landa-image (21).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Poetry is my first Love</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-</div>
-<div class="covered" style="display: flex;">
-
- <div class="box" style="border: transparent; width:50%; margin-right: 4px;">
-    <div class="post" data-post-id="02022">
-    <a href="Images/Landa-image (22).png"><img class="post-image" src="Images/Landa-image (22).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">My Live performance</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="02023">
-    <a href="Images/Landa-image (23).png"><img class="post-image" src="Images/Landa-image (23).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">When i talk everyone listens, ngilibhubesikati</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-    <div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="02024">
-    <a href="Images/Landa-image (24).png"><img class="post-image" src="Images/Landa-image (24).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Owh what a performance</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-</div>
-<div class="covered" style="display: flex;">
-
- <div class="box" style="border: transparent; width:50%; margin-right: 4px;">
-    <div class="post" data-post-id="02025">
-    <a href="Images/Landa-image (25).png"><img class="post-image" src="Images/Landa-image (25).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Poetry is Everything to me</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="02026">
-    <a href="Images/Landa-image (26).png"><img class="post-image" src="Images/Landa-image (26).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">The lioness</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-    <div class="box" style="border: transparent; width:50%;">
-    <div class="post" data-post-id="02027">
-    <a href="Images/Landa-image (27).png"><img class="post-image" src="Images/Landa-image (27).png" style="width:70%; height: auto; border-top-left-radius: 24px; border-top-right-radius: 24px; border: 5px solid darkgray;" alt="Post Image"></a>
-    <p style="text-align: center; align-items: center; width:70%; height: auto; border-radius: 0px; margin-left: 15%">Bunkondlo bukimi</p>
-     <div class="post-ratings-container" style="margin-right: 8px">
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">thumb_up</span>
-        <span class="post-rating-count">0</span>
-      </div>
-      <div class="post-rating">
-        <span class="post-rating-button material-icons">favorite</span>
-        <span class="post-rating-count">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-
-</div>
-
 <div class="gallaries" style="text-align: center;">
-<img src="Images/Pluga Logo3.png" style="text-align: center; width: 40px; height: auto;">
+<img src="Images/Pluga Logo3.png" style="text-align: center; width: 40px; height: auto; margin-top: 15px;">
 </div>
-
- <div class="widget" style="font-size: 7px; margin-top: 70px;">
+<iframe id=""src="" frameborder="0"></iframe>
+<div class="widget" style="font-size: 7px; margin-top: 70px;">
                     <ul class="style2">
                       <li><a href="https://www.termsfeed.com/live/1ab1c651-5b25-43e4-8812-d7e8658a1dd3">Privacy Policy</a></li>
                       <li><a href="https://www.termsfeed.com/live/07228ddf-8948-43c8-8992-679d5a7536e2">terms</a></li>
                     </ul>
                   </div>
     </div>
+
 
 	<footer>
 <div class="outer-footer">
@@ -596,8 +302,8 @@
 		</div>
 	</div>
 </div>
+</footer>
 <script src="pluga.js"></script>
 <script src="main.js"></script>
-</footer>
 </body>
 </html>
